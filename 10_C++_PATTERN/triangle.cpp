@@ -18,7 +18,6 @@ int main(){
         cout << endl;
     }
     cout << "---------------------------" << endl;
-    
     for(i=1;i<=r;i++){
         for(j=1;j<=i;j++){
             cout << i << " ";
@@ -26,13 +25,12 @@ int main(){
         cout << endl;
     }
     cout << "---------------------------" << endl;
-
+    
     for(i='A';i<='D';i++){
         for(j='A';j<=i;j++){
             cout << (char)j << " ";
         }
         cout << endl;
     }
-
     return 0;
 }
