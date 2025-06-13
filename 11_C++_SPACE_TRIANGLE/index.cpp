@@ -25,6 +25,30 @@ int main(){
         }
         cout << endl;
    }
+   for(int i=1;i<=r;i++){
+ 
+        for(int k=i;k<r;k++)
+        {                           // i=1 k=1 op==_ k=2 op==_ k=3 op==_ k=4 op==_ 
+            cout << " " << " "; // i=2 k=2 op==_ k=3 op==_ k=4 op==_ // i=3 k=3 op==_ k=4 op==_ // i=4 k=4 op==_
+        }
+        for(int j=1;j<=i;j++)
+        { 
+            cout << j << " ";                                      
+        }
+        cout << endl;
+   }
+   for(int i=1;i<=r;i++){
+ 
+        for(int k=i;k<r;k++)
+        {                           // i=1 k=1 op==_ k=2 op==_ k=3 op==_ k=4 op==_ 
+            cout << " " << " "; // i=2 k=2 op==_ k=3 op==_ k=4 op==_ // i=3 k=3 op==_ k=4 op==_ // i=4 k=4 op==_
+        }
+        for(int j=1;j<=i;j++)
+        { 
+            cout << i << " ";                                      
+        }
+        cout << endl;
+   }
 
     return 0;
 }
