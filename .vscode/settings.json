@@ -4,6 +4,7 @@
         "ostream": "cpp",
         "istream": "cpp",
         "streambuf": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "new": "cpp"
     }
 }
