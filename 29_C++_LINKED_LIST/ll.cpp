@@ -43,7 +43,6 @@ int main(){
     //  cout  << obj1->data << endl;
     //  cout  << obj1->next->data << endl;
     //  cout  << obj1->next->next->data << endl;
-
     // cout << obj1->next << endl;
     Node *ptr = obj1;
 
