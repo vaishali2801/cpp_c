@@ -1,0 +1,47 @@
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+int partition(vector<int>&arr,int start,int end){
+
+    int idx = start -1;
+    int pivot = arr[end];
+
+    for(int i = start; i< end;i++){
+
+        if(arr[i] >= pivot){
+
+            idx++;
+           swap(arr[i],arr[idx]);
+        } 
+    }
+    idx++;
+    swap(arr[end],arr[idx]);
+    return idx;
+}
+
+void quicksort(vector<int> &arr ,int start,int end){
+
+    if(start<end){
+
+        int pidx = partition(arr , start ,end);
+
+        //left small value
+        quicksort(arr,start,pidx-1);
+
+        //right big value
+        quicksort(arr,pidx+1 ,end);                     
+    }
+}    
+int main(){
+    vector<int> arr = {10,6,5,2,8,1,9};
+
+    quicksort(arr,0,arr.size()-1);
+
+    cout <<" sorted elements is : " ;
+    for(int x : arr){
+        cout << x << " " ;
+    }
+    cout << endl;
+}
